@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 5%;
+}
+.detail ul {
+  list-style: none;
+}
+.detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(121, 177, 181);
+  height: 80vh;
+}
+.larger-font {
+  font-size: xx-large;
+  font-weight: bolder;
+}

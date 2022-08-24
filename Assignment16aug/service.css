@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 5%;
+}
+section {
+  background: linear-gradient(rgb(0, 92, 128), antiquewhite);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+}
+article {
+  font-weight: bolder;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border: 2px solid rgb(0, 119, 255);
+  border-radius: 50%;
+  background: linear-gradient(aliceblue, skyblue);
+}

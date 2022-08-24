@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(129, 198, 210, 0.541);
+}
+#navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 70px;
+  border-radius: 50px;
+  background-color: #222235;
+}
+.similar a {
+  font-weight: bolder;
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+}
+section {
+  border-radius: 2px solid red;
+  height: 50%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: ; */
+}
+.main {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 50%;
+}
+.main-heading {
+  height: inherit;
+  font-size: 40px;
+  padding: 20px;
+  margin-bottom: 353px;
+  margin-right: -41px;
+  font-weight: bolder;
+  /* border: 2px solid red; */
+  background-color: antiquewhite;
+}
+.main p {
+  background-color: rgba(201, 198, 198, 0.559);
+  font-size: 40px;
+  /* margin-left:
+   50px; */
+
+  padding: 20px;
+}
+.aside {
+  /* border: 2px solid rebeccapurple; */
+  /* height: auto;
+  width: auto; */
+}
+.similar {
+  font-weight: bolder;
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  /* border: 2px solid white; */
+  margin: 0px 100px;
+  padding: 2%;
+  transition: 1.5s;
+}
+.aside img {
+  height: 300px;
+  width: 100%;
+}
+
+.similar:hover {
+  /* background-color: sandybrown;
+   */
+
+  background-color: gray;
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+footer {
+  /* border: 2px solid red; */
+  /* height: 40px; */
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+}
+footer p {
+  /* border: 2px solid red; */
+  width: 200px;
+  animation: foot1 10s linear infinite;
+  /* animation: foot2 10s linear infinite; */
+}
+
+@keyframes foot1 {
+  from {
+    margin-right: 80vw;
+  }
+  to {
+    margin-left: 80vw;
+  }
+}

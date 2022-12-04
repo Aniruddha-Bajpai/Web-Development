@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // hide and show
+        $("#hide").click(function () {
+          $("#box").hide();
+        });
+        $("#show").click(function () {
+          $("#box").show();
+        });
+        // fadein
+        $("#fader").click(function () {
+          $("#sp1").fadeIn();
+          $("#sp2").fadeIn("slow");
+          $("#sp3").fadeIn("4000");
+          $("#sp1").fadeToggle();
+          $("#sp2").fadeToggle("slow");
+          $("#sp3").fadeToggle("4000");
+        });
+        $("#upper").click(function () {
+          $("#lower").slideUp(1000);
+          $("#lower").slideDown(1000); // this wont work because slide up and slide down work once if one has worked then the other does not works
+          $("#lower").slideToggle(1000); // hence we have toggle which work even if the other event is fired
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div
+      id="box"
+      style="width: 100px; height: 100px; background-color: aquamarine"
+    >
+      HIDE AND SHOW EFFECT
+    </div>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+
+    <button id="fader">fade-in && fade-toggle effect</button>
+    <span id="sp1" style="display: none">Fade-1 appearence</span>
+    <span id="sp2" style="display: none">Fade-2 appearence</span>
+    <span id="sp3" style="display: none">Fade-3 appearence</span>
+
+    <div
+      id="upper"
+      style="height: 100px; width: 500px; background-color: sandybrown"
+    >
+      SLIDE EFFECT
+    </div>
+    <div
+      id="lower"
+      style="height: 400px; width: 500px; background-color: aquamarine"
+    ></div>
+  </body>
+</html>

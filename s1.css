@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+div > p {
+  border: 5px solid yellow;
+  background-color: blue;
+  text-align: center;
+  color: red;
+}

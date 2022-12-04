@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Task-1</p>
+    <input class="pno" type="text" />
+    <span
+      class="out-1"
+      style="width: 50px; height: 25px; border: 2px solid red"
+    >
+      Output
+    </span>
+    <p>Task-2</p>
+    <input class="email" type="text" />
+    <span class="out2" style="width: 50px; height: 25px; border: 2px solid red">
+    </span>
+    <p>Task-3</p>
+    <input class="cc" type="text" />
+    <span class="out3" style="width: 50px; height: 25px; border: 2px solid red">
+    </span>
+    <p>Task-4</p>
+    <input class="dn" type="text" />
+    <span class="out4" style="width: 50px; height: 25px; border: 2px solid red">
+    </span>
+    <p>Task-5</p>
+    <input class="vow" type="text" />
+    <span class="out5" style="width: 50px; height: 25px; border: 2px solid red">
+    </span>
+    <p>Task-6</p>
+    <input class="con" type="text" />
+    <span class="out6" style="width: 50px; height: 25px; border: 2px solid red">
+    </span>
+    <p>Task-7</p>
+    <input class="wrd" type="text" />
+    <span class="out7" style="width: 50px; height: 25px; border: 2px solid red">
+    </span>
+    <p>Task-8</p>
+    <input class="num" type="text" />
+    <span class="out8" style="width: 50px; height: 25px; border: 2px solid red">
+    </span>
+    <script>
+      // pattern 1
+      // var pno = "8709121212";
+      var pno = document.querySelector(".pno");
+      var out1 = document.querySelector(".out-1");
+      var mobpattern = /^[7-8]\d[0-9]{8}$/;
+      pno.value = "7812121212";
+      if (pno.value.match(mobpattern)) {
+        out1.innerHTML = true;
+      } else out1.innerHTML = false;
+
+      // pattern 2
+      var email = document.querySelector(".email");
+      var out2 = document.querySelector(".out2");
+      email.value = "abc1234@gmail.com";
+      var emailpattern = /^[a-c]+[1-4]+@[g|m|a|i|l]+?\.[c|o|m]{3}$/;
+      if (email.value.match(emailpattern)) out2.innerHTML = "true";
+      else out2.innerHTML = "false";
+
+      // pattern 3=
+      var creditpattern = /^4[0-9]{12}(?:[0-9]{3})?$/;
+      var cc = document.querySelector(".cc");
+      var out3 = document.querySelector(".out3");
+      cc.value = "4111111111111111";
+      if (cc.value.match(creditpattern)) out3.innerHTML = "true";
+      else out3.innerHTML = "false";
+      // pattern 4
+      var dnm = document.querySelector(".dn");
+      var out4 = document.querySelector(".out4");
+      dnm.value = "google.com";
+      var domainnamepattern = /^([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}$/;
+      if (dnm.value.match(domainnamepattern)) out4.innerHTML = "true";
+      else out4.innerHTML = "false";
+      // pattern 5
+      var vowel = /[aeiouAEIOU]/gi;
+      var exm = document.querySelector(".vow");
+      var out5 = document.querySelector(".out5");
+      exm.value = "WEBdevelopment";
+      if (exm.value.match(vowel)) out5.innerHTML = "true";
+      else out5.innerHTML = "false";
+      // pattern 6
+      var cn = document.querySelector(".con");
+      var out6 = document.querySelector(".out6");
+      cn.value = "aadsa";
+      var consonent = /[aeiouAEIOU]/gi;
+      out6.innerHTML = cn.value.length - cn.value.match(consonent).length;
+      // pattern 7
+      var whitespace = /\s/g;
+      var dn = document.querySelector(".wrd");
+      var out7 = document.querySelector(".out7");
+      dn.value = "ram manhoar is good person";
+      let string = dn.value.trim();
+      string = string + " ";
+      out7.innerHTML = string.match(whitespace).length;
+
+      // pattern 9 number is even or odd
+      var number = document.querySelector(".num");
+      var out8 = document.querySelector(".out8");
+      number.value = "47";
+
+      if (number.value % 2 == 0) out8.innerHTML = "even";
+      else out8.innerHTML = "odd";
+    </script>
+  </body>
+</html>

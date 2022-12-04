@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Jquery Events</h1>
+    <p>Quick brown fox is the clever animal</p>
+    <span id="par" style="border: 2px solid red">Example-1</span>
+    <input type="text" />
+    <a href="" style="border: 2px solid red">Example-2</a>
+    <button>Example-3</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // mouse enter
+        $("#par").mouseenter(function () {
+          alert("You hover p1");
+        });
+        // mouse leave
+        $("#par").mouseleave(function () {
+          alert("You leave p1");
+        });
+        // mouse down or mouse pressed
+        $("button").mousedown(function () {
+          alert("You pressed button");
+        });
+        // mouse up or mouse release
+        $("button").mouseup(function () {
+          alert("You release button");
+        });
+        // hover combination of mouse enter and leave
+        $("a").hover(
+          function () {
+            alert("You hover a");
+          },
+          function () {
+            alert("Bye!, You left a");
+          }
+        );
+        // focus
+        $("input").focus(function () {
+          $(this).css("background-color", "red");
+        });
+        // blur
+        $("input").blur(function () {
+          $(this).css("background-color", "blue");
+        });
+        // on
+        $("p").on({
+          mouseenter: function () {
+            $(this).css("background-color", "lightgreen");
+          },
+          mouseleave: function () {
+            $(this).css("background-color", "pink");
+          },
+          click: function () {
+            $(this).css("background-color", "blue");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

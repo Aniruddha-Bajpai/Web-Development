@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      /* text-align: center; */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+
+      align-items: center;
+    }
+    .container {
+      width: fit-content;
+      background-color: antiquewhite;
+    }
+    .inner-container {
+      width: fit-content;
+      height: 100px;
+      display: flex;
+    }
+    .cell {
+      padding: 30px;
+    }
+    .active {
+      background-color: aliceblue;
+      border: 2px solid rgb(0, 255, 123);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="inner-container 1">
+        <div class="cell 1 active">cell(1,1)</div>
+        <div class="cell 2">cell(1,2)</div>
+      </div>
+      <div class="inner-container 2">
+        <div class="cell 3">cell(2,1)</div>
+        <div class="cell 4">cell(2,2)</div>
+      </div>
+    </div>
+
+    <script>
+      // task-1 : apply effects through eventlistener
+      let cell = document.querySelectorAll(".cell");
+      console.log(cell);
+      function removeActive() {
+        cell.forEach((x) => {
+          x.classList.remove("active");
+        });
+      }
+      cell.forEach((x) => {
+        console.log(x);
+        x.addEventListener("click", () => {
+          removeActive();
+          x.classList.add("active");
+        });
+      });
+
+      // task-2
+      var usr = prompt("Enter the cell number between 1 to 4");
+      for (let i = 1; i <= cell.length; ++i) {
+        if (i == usr) {
+          removeActive();
+          cell[i - 1].classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>

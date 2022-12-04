@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Poppins:wght@300&display=swap");
+      footer {
+        height: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .inner {
+        border: 5px solid black;
+        /* border-bottom: none; */
+        height: 110vh;
+      }
+      .bg-1 {
+        background: url("./back.jpg") no-repeat;
+        background-size: cover;
+        position: relative;
+        left: 500px;
+      }
+      .container {
+        /* border: 2px solid grey; */
+        /* height: 100vh; */
+        position: absolute;
+        overflow: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .l-1 {
+        color: darkslategrey;
+
+        width: 900px;
+      }
+      .l-2 {
+        border: 2px solid grey;
+        background-color: darkgrey;
+        width: 1000px;
+      }
+      .font-1 {
+        font-family: "Poppins", sans-serif;
+        color: darkslategray;
+      }
+    </style>
+    <title>Menu</title>
+  </head>
+  <body>
+    <div class="container bg-1">
+      <div class="inner">
+        <ul style="list-style: none; text-align: center">
+          <li>
+            <hr class="l-1" />
+            <hr class="l-2" />
+            <span style="font-size: 50px; font-weight: bolder">MENU</span>
+            <hr class="l-1" />
+            <hr class="l-2" />
+          </li>
+        </ul>
+        <br />
+        <ul style="list-style: none; text-align: center">
+          <li>
+            <h1>APPETIZER</h1>
+          </li>
+          <ul style="list-style: none">
+            <li>
+              <span style="font-size: 25px" class="font-1">
+                MARYLAND CRABCAKE WITH AVOCADO ROASTED TOMATO AND CHIPOTLE SAUCE
+              </span>
+            </li>
+          </ul>
+        </ul>
+        <br />
+        <ul style="list-style: none; text-align: center">
+          <li>
+            <h1>ENTREE</h1>
+          </li>
+          <li>
+            <span style="font-size: 25px" class="font-1">
+              YOUR CHOICE OF THE FOLLOWING:
+              <br />
+              <br />
+              GRILLED FILET MIGNON WITH RED WINE SAUCE,TWICE BAKED HORSERADISH
+              POTATO & GREEN BEANS
+              <br />
+              <br />
+              HERB-CRUSTED BAKED SALMON CHIVE WHIPPED POTATOES & GREEN
+              VEGETABLES
+            </span>
+          </li>
+        </ul>
+        <br />
+        <ul style="list-style: none; text-align: center">
+          <li>
+            <h1>DESSERT</h1>
+          </li>
+          <li>
+            <span style="font-size: 25px; margin-bottom: 5px" class="font-1">
+              WEDDING CAKE WITH ALMOND SAUCE
+              <br />
+              LIBERTY HOUSE DESSERT SAMPLER
+            </span>
+          </li>
+        </ul>
+        <br />
+        <ul style="list-style: none; text-align: center">
+          <span style="font-size: 30px; font-weight: bolder">CHRISTEN</span>
+          <span><em>and</em></span>
+          <span style="font-size: 30px; font-weight: bolder"> JACKSON</span>
+        </ul>
+        <footer style="margin-top: 110px">
+          <img src="hero.png" alt="" />
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+      body
+      {
+        background-color: rgb(211, 74, 24);
+      }
+      #student_form
+      {
+        border: 2px double black;
+        border-radius: 20px;
+        border-width: 5px;
+        margin: 60px 550px;
+        height: 590px;
+        width: 420px; 
+      }
+      h1
+      {
+        text-align: center;
+      }
+      label,input,span
+      {
+        font-size: 20px;
+      }
+      div #submit
+      {
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div id="student_form">
+    <h1>Register Here</h1>
+    <form action="">
+        
+        <label for="">&nbsp; Name :</label>
+        <br>
+        &nbsp;&nbsp;<input type="text" placeholder="Enter your Name">
+        <br><br>
+        <label for="">&nbsp;&nbsp;Roll Number :</label>
+        <br>
+        &nbsp;&nbsp;<input type="text" placeholder="Enter your Roll Number">
+        <br><br>
+        <label for="">&nbsp;&nbsp;Email :</label>
+        <br>
+        &nbsp;&nbsp;<input type="email" placeholder="Enter your Email">
+        <br><br>
+        <label for=""> &nbsp;&nbsp;Password : </label>
+        <br>
+        &nbsp;&nbsp;<input type="password" placeholder="Enter the password">
+        <br><br>
+        <label for=""> &nbsp;&nbsp;DOB :</label>
+        <br>
+        &nbsp;&nbsp;<input type="date">
+         <br><br>
+         <label for=""> &nbsp;&nbsp;Age :</label>
+         <br>
+         &nbsp;&nbsp;<input type="number">
+         <br><br>
+         <label for=""> &nbsp;&nbsp;Hobbies :</label>
+         <input type="checkbox"> <span>Cricket</span>
+         <input type="checkbox"> <span>Badminton</span>
+         <input type="checkbox"> <span>Others</span>     
+         <br>
+         <br>
+         <div id="submit">
+         <input type="submit" id="submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

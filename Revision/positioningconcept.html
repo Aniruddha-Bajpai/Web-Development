@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>POSITIONING</title>
+    <style>
+      .container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        border: 2px solid green;
+      }
+      .box1 {
+        position: absolute;
+        background-color: aquamarine;
+        left: 30px;
+        /* left: 10px; */
+      }
+      .box2 {
+        position: absolute;
+        background-color: antiquewhite;
+      }
+      .box3 {
+        position: relative;
+        background-color: aqua;
+      }
+
+      .same {
+        width: 100px;
+        height: 100px;
+        /* background-color: black; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1 same"></div>
+      <div class="box2 same"></div>
+      <div class="box3 same"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+Java Script :- 
+Script :-
+Livescript 1995
+ECMAscript 1996
+European computer Manufacturing Association
+Standardised
+
+Example :- 
+  Word completion suggestion in Google Search
+
+Types :-
+Server :- PHP, Python
+Client :- JavaScript
+
+Lossely Typed :-
+var a = 5;
+a = "String"
+
+Dynamic Scripting Language (Runtime modification of values)
+
+1. Structural Layer(HyperTextMarkupLanguage)
+2. Presentation(CascadingStyleSheet)
+3. Behaviour(JavaScript)
+
+Type of Script : -
+1. Embedded/Internal 
+3. External (.js file)
+[src] property
+Preferable Position of using Scripting Language 
+Before Closing of Body tag
+
+Variables :-
+[var] 
+redeclaring variable allowed
+reassigning variable allowed
+[let] 
+reassigning variable allowed
+Error in redeclaring
+[const]
+redeclaring and reassignment not allowed [Error]
+
+Inbuilt Functions
+1. Alert
+2. Prompt
+3. Confirm
+
+[DataTypes]
+1. Numeric (deals with numbers + floating) 
+2. String (deals with ""/'')
+3. Null 
+4. Undefine
+5. Boolean 
+6. Array
+7. Object
